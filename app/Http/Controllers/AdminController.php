@@ -8,7 +8,9 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Validation\ValidationException;
 
 use App\Models\Book;
+use App\Exports\BooksExport;
 use PDF;
+use Excel;
 
 class AdminController extends Controller
 {
@@ -133,5 +135,10 @@ class AdminController extends Controller
 
         $pdf = PDF::loadview('print_books', ['books' => $books]);
         return $pdf->download('data_buku.pdf');
+    }
+
+    public function export()
+    {
+        return Excel::download(new BooksExport, 'books.xlsx');
     }
 }
