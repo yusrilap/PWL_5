@@ -8,8 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class Book extends Model
 {
     use HasFactory;
-    protected $table = 'books';
-    // protected $fillable = ['judul', 'penulis', 'tahun', 'penerbit', 'cover'];
+    // protected $table = 'books';
+    protected $fillable = [
+        'judul',
+        'penulis',
+        'tahun',
+        'penerbit'
+    ];
+
     public static function getDataBooks()
     {
         $books = Book::all();
