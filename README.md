@@ -28,8 +28,17 @@ php artisan db:seed --class=CreateRolesSeeder
 php artisan storage:link
 ```
 
+
 ## Run tests
 
 ```sh
 php artisan serve
 ```
+
+## For API
+composer require laravel/sanctum
+php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
+php artisan migrate:fresh --seed
+php artisan db:seed --class=CreateRolesSeeder
+php artisan db:seed --class=CreateUsersSeeder
+
