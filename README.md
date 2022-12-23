@@ -1,6 +1,25 @@
 ﻿# PWL_5
 Repository ini dibuat untuk memenuhi tugas Praktikum Pemrograman Web Lanjut Shift-5
 
+```sh
+Nama    : Yusril Azhar Permana
+NPM     : 5520120074
+```
+```sh
+
+```sh
+Fitur yang ada
+1. Read Data Buku
+2. Create Data Buku
+3. Update Data Buku
+4. Delete Data Buku
+5. SweetAlert
+6. Print to PDF
+7. Export/Import File
+8. Sudah terhubung dengan Rest API
+```
+```sh
+
 
 ## Install
 
